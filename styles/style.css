@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+#start, .boardInfo{
+    font-size: 25px;
+}
+#gameOver{
+    display: none;
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start{
+    background-color: rgb(0, 21, 255);
+    border: none;
+    color: #fafafa;
+    padding: 3px;
+}
+#scoreBoard{
+    display: inline-flex;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background-color: #456990;
+}
+.snakeSquare{
+    background-color: #ccf47f;
+}
+.foodSquare{
+    background-color: #f35a69;
+}
+
