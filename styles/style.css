@@ -31,6 +31,7 @@
     color: #fafafa;
     padding: 3px;
 }
+
 #scoreBoard{
     display: inline-flex;
 }
@@ -47,3 +48,10 @@
     background-color: #f35a69;
 }
 
+.dificult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

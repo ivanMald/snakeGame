@@ -4,7 +4,7 @@ const startButton = document.getElementById('start');
 const gameOverSign = document.getElementById('gameOver');
 
 const boardSize = 10;
-const gameSpeed = 100;
+let gameSpeed = 100;
 const squareTypes = {
     emptySquare: 0,
     snakeSquare: 1,
