@@ -1,30 +1,44 @@
 let normal;
 let dificil;
 let ultraDificil;
+let dificultad;
+
 
 normal = document.getElementById("normal")
 dificil = document.getElementById("dificil")
 ultraDificil = document.getElementById("ultraDificil")
 
 
-const seleccionaDificultad = () =>{
-    switch (gameSpeed){
-        case 'normal':
+function seleccionaDificultadNormal (normal){
+    if (normal){
         gameSpeed = 110
-        break
-        case 'dificil':
-            gameSpeed = 95
-            break
-        case 'ultraDificil': 
-            gameSpeed = 50
-            break
-        default:
-            gameSpeed = 100
-            break
+        startGame()
+    }else{
+        gameSpeed = 100
+        startGame()
     }
-    startGame()
+}
+function seleccionaDificultadDificl (dificil){
+    if (dificil){
+        gameSpeed = 90
+        startGame()
+    }else{
+        gameSpeed = 100
+        startGame()
+    }
+}
+function seleccionaDificultadUdificl(ultraDificil){
+    if (ultraDificil){
+        gameSpeed = 50
+        startGame()
+    }else{
+        gameSpeed = 100
+        startGame()
+    }
 }
 
-normal.addEventListener("click", seleccionaDificultad)
-dificil.addEventListener("click", seleccionaDificultad)
-ultraDificil.addEventListener("click", seleccionaDificultad)
+
+
+normal.addEventListener("click", seleccionaDificultadNormal)
+dificil.addEventListener("click",seleccionaDificultadDificl )
+ultraDificil.addEventListener("click",seleccionaDificultadUdificl )
