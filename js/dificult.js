@@ -1,7 +1,6 @@
 let normal;
 let dificil;
 let ultraDificil;
-let dificultad;
 
 
 normal = document.getElementById("normal")
